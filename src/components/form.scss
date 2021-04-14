@@ -1,0 +1,45 @@
+$border-radius: 15px;
+$font-size-message: 18px;
+$line-height: 1.15;
+
+.form {
+  padding: 50px 0 0 0;
+  display: grid;
+  gap: 15px;
+  width: $width-block;
+  margin: 0 auto;
+
+  &__text {
+    font-size: $font-size-message;
+    line-height: $line-height;
+    min-height: 150px;
+    margin: 0;
+    padding: 5px 0 0 5px;
+    box-sizing: border-box;
+    background-color: #F3EDE8;
+    resize: none;
+    border: none;
+    border-radius: $border-radius;
+
+    &__text:focus {
+      outline: 3px solid #918493;
+    }
+  }
+
+  &__button {
+    min-height: 50px;
+    font-size: $font-size-message;
+    line-height: $line-height;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #775565;
+    color: #F4F6F3;
+    margin-bottom: 50px;
+    border-radius: $border-radius;
+  }
+}
+
+
+
+

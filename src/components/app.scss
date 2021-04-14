@@ -1,0 +1,16 @@
+$base-height: 100vh;
+$base-width: 100vw;
+$font-family: Arial, Helvetica, sans-serif;
+
+.page {
+  background-color: #24222B;
+  height: $base-height;
+  width: $base-width;
+  overflow: hidden;
+
+    &__container {
+      font-family: $font-family;
+    }
+}
+
+

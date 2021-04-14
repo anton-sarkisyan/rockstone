@@ -1,0 +1,25 @@
+.time {
+  background-color: #f39494d0;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__items {
+    background-color: #b46376;
+    width: $width-block;
+    border-radius: $border-radius;
+    padding: 5px;
+  }
+
+  &__text {
+    color: #F3EDE8;
+    text-align: center;
+    font-size: 24px;
+    line-height: $line-height;
+    margin: 0;
+  }
+}
+
+

@@ -1,0 +1,29 @@
+$width-block: calc(100% - 50px * 2);
+
+.main {
+  display: flex;
+  min-height: $base-height;
+  position: relative;
+  transition: all ease 1s;
+
+   &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
+    height: $base-height;
+  }
+
+   &__messages {
+    display: grid;
+    gap: 25px;
+    margin: 0 0 30px;
+    width: $width-block;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+
+
