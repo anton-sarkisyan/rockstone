@@ -14,7 +14,7 @@
   display: flex;
   min-height: 100vh;
   position: relative;
-  transition: all ease 1s;
+  transition: all ease 0.7s;
 }
 .main__items {
   display: flex;

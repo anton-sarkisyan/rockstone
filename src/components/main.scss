@@ -4,7 +4,7 @@ $width-block: calc(100% - 50px * 2);
   display: flex;
   min-height: $base-height;
   position: relative;
-  transition: all ease 1s;
+  transition: all ease .7s;
 
    &__items {
     display: flex;
