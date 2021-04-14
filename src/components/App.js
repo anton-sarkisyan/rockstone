@@ -5,17 +5,17 @@ function App() {
   const [positionX, setPositionX] = React.useState(0);
   const [touchStart, setTouchStart] = React.useState(0);
   const [touchEnd, setTouchEnd] = React.useState(0);
-  const [innerWidth, setInnerWidth] = React.useState(window.innerWidth);
+  const [inneWindowrWidth, setInneWindowrWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
-    window.addEventListener('resize', handleInnerWidrh);
+    window.addEventListener('resize', handleInnerWidth);
   }, [])
 
-  function handleInnerWidrh() {
-    setInnerWidth(window.innerWidth);
+  function handleInnerWidth() {
+    setInneWindowrWidth(window.innerWidth);
   }
 
-  //Обработчик начальной точки касания поверхности по оси X
+  //Обработчик начальной точки касания по оси X
   function handleTouchStart(e) {
     setTouchStart(e.targetTouches[0].clientX);
   }
@@ -27,15 +27,15 @@ function App() {
 
   // Настройка горизонтального свайпа
   function handleTouchEnd() {
-    if (positionX < innerWidth) {
-      if (touchStart - touchEnd > 80) {
-        setPositionX((positionX) => (positionX + innerWidth));
+    if (positionX < touchEnd) {
+      if (touchStart - touchEnd > 150) {
+        setPositionX((positionX) => (positionX + inneWindowrWidth));
       }
     }
 
     if (positionX > 0) {
-      if (touchStart - touchEnd < -80) {
-        setPositionX((positionX) => (positionX - innerWidth));
+      if (touchStart - touchEnd < -150) {
+        setPositionX((positionX) => (positionX - inneWindowrWidth));
       }
     }
   }
@@ -49,7 +49,7 @@ function App() {
       >
         <Main
           swipe={{ right: `${positionX}px` }}
-          width={{ minWidth: `${innerWidth}px` }}
+          width={{ minWidth: `${inneWindowrWidth}px` }}
         />
       </div>
     </div >
