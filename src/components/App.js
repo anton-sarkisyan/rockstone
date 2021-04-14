@@ -28,13 +28,13 @@ function App() {
   // Настройка горизонтального свайпа
   function handleTouchEnd() {
     if (positionX < touchEnd) {
-      if (touchStart - touchEnd > 150) {
+      if (touchStart - touchEnd > 70) {
         setPositionX((positionX) => (positionX + inneWindowrWidth));
       }
     }
 
     if (positionX > 0) {
-      if (touchStart - touchEnd < -150) {
+      if (touchStart - touchEnd < -70) {
         setPositionX((positionX) => (positionX - inneWindowrWidth));
       }
     }
